@@ -1,0 +1,30 @@
+{
+  "name": "bc-parks-client",
+  "version": "0.1.0",
+  "description": "Javascript client for interacting with BC Parks web services",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "prepublish": "npm run build"
+  },
+  "author": "Kelly Banman",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.51",
+    "@types/cheerio": "^0.22.18",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/node": "^13.13.5",
+    "@types/tough-cookie": "^4.0.0",
+    "@types/tough-cookie-file-store": "^2.0.0",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "axios-cookiejar-support": "^1.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "moment": "^2.27.0",
+    "tough-cookie": "^4.0.0"
+  }
+}
